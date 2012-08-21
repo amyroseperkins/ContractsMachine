@@ -1,0 +1,120 @@
+contract_1:
+    id: 1
+    editor: Amy Rose
+    author: Wilford Brimley
+    title: How dogs can cure what ails you
+    author_citizen: USA
+    subject: Man and dog fight together against a deadly disease 
+    length: 100 pages
+    page_number: 100
+    illustrations: 2
+    integral: not sure
+    index: of course
+    delivery_date: 06/07/2011
+    hc_dom_net: 20
+    hc_ex_net: 10
+    pb_dom_net: 10
+    pb_ex_net: 10
+    epub_net: 25
+    ebook_net: 25
+    copub_incl: 25
+    bookclub_incl: 5
+    bookclub_excl: 5
+    audio_dom: 5
+    audio_ex: 5
+    custompub: 5
+    specialsale: 5
+    sub_trans: 5
+    sub_epub: 5
+    sub_hc: 5
+    sub_pb: 5
+    sub_1serial_print: 11
+    sub_2serial_print: 11
+    sub_1serial_digital: 11
+    sub_2serial_digital: 11
+    sub_audio: 11
+    sub_braille: 11
+    sub_misc: 11
+    created_at: 11
+    updated_at: 11
+  
+contract_2:
+    id: 2
+    editor: Gilda Beans
+    author: Dakota Fanning
+    title: How dogs can edit your overreaching academic works
+    author_citizen: USA
+    subject: Popular actor and slow witted dog team up to bring over wrought social commentary to the market. 
+    length: 100 pages
+    page_number: 100
+    illustrations: 2
+    integral: not sure
+    index: of course
+    delivery_date: 06/07/2011
+    hc_dom_net: 20
+    hc_ex_net: 10
+    pb_dom_net: 10
+    pb_ex_net: 10
+    epub_net: 25
+    ebook_net: 25
+    copub_incl: 25
+    bookclub_incl: 5
+    bookclub_excl: 5
+    audio_dom: 5
+    audio_ex: 5
+    custompub: 5
+    specialsale: 5
+    sub_trans: 5
+    sub_epub: 5
+    sub_hc: 5
+    sub_pb: 5
+    sub_1serial_print: 11
+    sub_2serial_print: 11
+    sub_1serial_digital: 11
+    sub_2serial_digital: 11
+    sub_audio: 11
+    sub_braille: 11
+    sub_misc: 11
+    created_at: 11
+    updated_at: 11
+    
+
+contract_3:
+    id: 3
+    editor: Gilda Beans
+    author: Dakota Fanning
+    title: How dogs can edit your overreaching academic works
+    author_citizen: USA
+    subject: Popular actor and slow witted dog team up to bring over wrought social commentary to the market. 
+    length: 100 pages
+    page_number: 100
+    illustrations: 2
+    integral: not sure
+    index: of course
+    delivery_date: 06/07/2011
+    hc_dom_net: 20
+    hc_ex_net: 10
+    pb_dom_net: 10
+    pb_ex_net: 10
+    epub_net: 25
+    ebook_net: 25
+    copub_incl: 25
+    bookclub_incl: 5
+    bookclub_excl: 5
+    audio_dom: 5
+    audio_ex: 5
+    custompub: 5
+    specialsale: 5
+    sub_trans: 5
+    sub_epub: 5
+    sub_hc: 5
+    sub_pb: 5
+    sub_1serial_print: 11
+    sub_2serial_print: 11
+    sub_1serial_digital: 11
+    sub_2serial_digital: 11
+    sub_audio: 11
+    sub_braille: 11
+    sub_misc: 11
+    created_at: 11
+    updated_at: 11

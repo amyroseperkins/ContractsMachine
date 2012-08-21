@@ -1,0 +1,7 @@
+<div class="fields">
+  <p>
+    <%= f.label :parent_id, "Alternative Provision" %>
+    <%= link_to_remove_fields "remove", f%><br />
+    <%= f.collection_select :parent_id, @template_alt_provs, :id, :simple_description, {:include_blank => true} %>
+  </p>
+</div>

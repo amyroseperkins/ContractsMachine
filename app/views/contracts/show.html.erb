@@ -1,0 +1,195 @@
+<% title "Contract" %>
+
+<p>
+  <strong>Author:</strong>
+  <%=h @contract.author %>
+</p>
+<p>
+  <strong>Editor:</strong>
+  <%=h @contract.editor %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%=h @contract.title %>
+</p>
+
+<p>
+  <b>Author citizen:</b>
+  <%=h @contract.author_citizen %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%=h @contract.subject %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%=h @contract.length %>
+</p>
+
+<p>
+  <b>Page number:</b>
+  <%=h @contract.page_number %>
+</p>
+
+<p>
+  <b>Illustrations:</b>
+  <%=h @contract.illustrations %>
+</p>
+
+<p>
+  <b>Integral:</b>
+  <%=h @contract.integral %>
+</p>
+
+<p>
+  <b>Index:</b>
+  <%=h @contract.index %>
+</p>
+
+<p>
+  <b>Delivery date:</b>
+  <%=h @contract.delivery_date %>
+</p>
+
+<p>
+  <b>Hc dom net:</b>
+  <%=h @contract.hc_dom_net %>
+</p>
+
+<p>
+  <b>Hc ex net:</b>
+  <%=h @contract.hc_ex_net %>
+</p>
+
+<p>
+  <b>Pb dom net:</b>
+  <%=h @contract.pb_dom_net %>
+</p>
+
+<p>
+  <b>Pb ex net:</b>
+  <%=h @contract.pb_ex_net %>
+</p>
+
+<p>
+  <b>Epub net:</b>
+  <%=h @contract.epub_net %>
+</p>
+
+<p>
+  <b>Ebook net:</b>
+  <%=h @contract.ebook_net %>
+</p>
+
+<p>
+  <b>Copub incl:</b>
+  <%=h @contract.copub_incl %>
+</p>
+
+<p>
+  <b>Bookclub incl:</b>
+  <%=h @contract.bookclub_incl %>
+</p>
+
+<p>
+  <b>Bookclub excl:</b>
+  <%=h @contract.bookclub_excl %>
+</p>
+
+<p>
+  <b>Audio dom:</b>
+  <%=h @contract.audio_dom %>
+</p>
+
+<p>
+  <b>Audio ex:</b>
+  <%=h @contract.audio_ex %>
+</p>
+
+<p>
+  <b>Custompub:</b>
+  <%=h @contract.custompub %>
+</p>
+
+<p>
+  <b>Specialsale:</b>
+  <%=h @contract.specialsale %>
+</p>
+
+<p>
+  <b>Sub trans:</b>
+  <%=h @contract.sub_trans %>
+</p>
+
+<p>
+  <b>Sub epub:</b>
+  <%=h @contract.sub_epub %>
+</p>
+
+<p>
+  <b>Sub hc:</b>
+  <%=h @contract.sub_hc %>
+</p>
+
+<p>
+  <b>Sub pb:</b>
+  <%=h @contract.sub_pb %>
+</p>
+
+<p>
+  <b>Sub 1serial print:</b>
+  <%=h @contract.sub_1serial_print %>
+</p>
+
+<p>
+  <b>Sub 2serial print:</b>
+  <%=h @contract.sub_2serial_print %>
+</p>
+
+<p>
+  <b>Sub 1serial digital:</b>
+  <%=h @contract.sub_1serial_digital %>
+</p>
+
+<p>
+  <b>Sub 2serial digital:</b>
+  <%=h @contract.sub_2serial_digital %>
+</p>
+
+<p>
+  <b>Sub audio:</b>
+  <%=h @contract.sub_audio %>
+</p>
+
+<p>
+  <b>Sub braille:</b>
+  <%=h @contract.sub_braille %>
+</p>
+
+<p>
+  <b>Sub misc:</b>
+  <%=h @contract.sub_misc %>
+</p>
+
+	
+<ol>
+	<% if @contract.alt_provs.empty? %>
+		<p>This contract has no alternative provisions</p>
+	<% else %>
+		<% for alt_prov in @contract.alt_provs %>
+		<li><%= h alt_prov.simple_description %></li>
+		<% end %>
+	<% end %>
+</ol>
+
+<p>
+	<% if permitted_to? :edit, @contract %> 
+      <%= link_to "Edit", edit_contract_path(@contract) %> |
+    <% end %>
+    <% if permitted_to? :destroy, @contract %>
+	  <%= link_to "Destroy", @contract, :confirm => 'Are you sure?', :method => :delete %> |
+	<% end %>
+  <%= link_to "View All", contracts_path %>
+</p>

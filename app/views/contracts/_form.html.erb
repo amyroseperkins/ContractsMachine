@@ -1,0 +1,150 @@
+<% form_for @contract do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :editor %><br />
+    <%= f.text_field :editor %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author_citizen %><br />
+    <%= f.text_field :author_citizen %>
+  </p>
+  <p>
+    <%= f.label :subject %><br />
+    <%= f.text_area :subject %>
+  </p>
+  <p>
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </p>
+  <p>
+    <%= f.label :page_number %><br />
+    <%= f.text_field :page_number %>
+  </p>
+  <p>
+    <%= f.label :illustrations %><br />
+    <%= f.text_field :illustrations %>
+  </p>
+  <p>
+    <%= f.label :integral %><br />
+    <%= f.text_area :integral %>
+  </p>
+  <p>
+    <%= f.label :index %><br />
+    <%= f.text_field :index %>
+  </p>
+  <p>
+    <%= f.label :delivery_date %><br />
+    <%= f.date_select :delivery_date %>
+  </p>
+  <p>
+    <%= f.label :hc_dom_net %><br />
+    <%= f.text_field :hc_dom_net %>
+  </p>
+  <p>
+    <%= f.label :hc_ex_net %><br />
+    <%= f.text_field :hc_ex_net %>
+  </p>
+  <p>
+    <%= f.label :pb_dom_net %><br />
+    <%= f.text_field :pb_dom_net %>
+  </p>
+  <p>
+    <%= f.label :pb_ex_net %><br />
+    <%= f.text_field :pb_ex_net %>
+  </p>
+  <p>
+    <%= f.label :epub_net %><br />
+    <%= f.text_field :epub_net %>
+  </p>
+  <p>
+    <%= f.label :ebook_net %><br />
+    <%= f.text_field :ebook_net %>
+  </p>
+  <p>
+    <%= f.label :copub_incl %><br />
+    <%= f.text_field :copub_incl %>
+  </p>
+  <p>
+    <%= f.label :bookclub_incl %><br />
+    <%= f.text_field :bookclub_incl %>
+  </p>
+  <p>
+    <%= f.label :bookclub_excl %><br />
+    <%= f.text_field :bookclub_excl %>
+  </p>
+  <p>
+    <%= f.label :audio_dom %><br />
+    <%= f.text_field :audio_dom %>
+  </p>
+  <p>
+    <%= f.label :audio_ex %><br />
+    <%= f.text_field :audio_ex %>
+  </p>
+  <p>
+    <%= f.label :custompub %><br />
+    <%= f.text_field :custompub %>
+  </p>
+  <p>
+    <%= f.label :specialsale %><br />
+    <%= f.text_field :specialsale %>
+  </p>
+  <p>
+    <%= f.label :sub_trans %><br />
+    <%= f.text_field :sub_trans %>
+  </p>
+  <p>
+    <%= f.label :sub_epub %><br />
+    <%= f.text_field :sub_epub %>
+  </p>
+  <p>
+    <%= f.label :sub_hc %><br />
+    <%= f.text_field :sub_hc %>
+  </p>
+  <p>
+    <%= f.label :sub_pb %><br />
+    <%= f.text_field :sub_pb %>
+  </p>
+  <p>
+    <%= f.label :sub_1serial_print %><br />
+    <%= f.text_field :sub_1serial_print %>
+  </p>
+  <p>
+    <%= f.label :sub_2serial_print %><br />
+    <%= f.text_field :sub_2serial_print %>
+  </p>
+  <p>
+    <%= f.label :sub_1serial_digital %><br />
+    <%= f.text_field :sub_1serial_digital %>
+  </p>
+  <p>
+    <%= f.label :sub_2serial_digital %><br />
+    <%= f.text_field :sub_2serial_digital %>
+  </p>
+  <p>
+    <%= f.label :sub_audio %><br />
+    <%= f.text_field :sub_audio %>
+  </p>
+  <p>
+    <%= f.label :sub_braille %><br />
+    <%= f.text_field :sub_braille %>
+  </p>
+  <p>
+    <%= f.label :sub_misc %><br />
+    <%= f.text_field :sub_misc %>
+  </p>
+
+  <% f.fields_for :alt_provs do |builder| %>
+	<%= render 'alt_prov_fields', :f => builder %>
+  <% end %>
+  
+  <p><%= link_to_add_fields "Add an alternative provision", f, :alt_provs %>
+  <p><%= f.submit %></p>
+<% end %>

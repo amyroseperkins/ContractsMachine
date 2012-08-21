@@ -1,0 +1,28 @@
+<h1>Editing alt_prov</h1>
+
+<% form_for(@alt_prov) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :legal_language %><br />
+    <%= f.text_area :legal_language %>
+  </p>
+  <p>
+    <%= f.label :simple_description %><br />
+    <%= f.text_field :simple_description %>
+  </p>
+  <p>
+    <%= f.label :contract_id %><br />
+    <%= f.text_field :contract_id %>
+  </p>
+  <p>
+    <%= f.label :parent_id %><br />
+    <%= f.text_field :parent_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @alt_prov %> |
+<%= link_to 'Back', alt_provs_path %>

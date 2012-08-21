@@ -1,0 +1,31 @@
+(in /Users/matthewperkins/ContractsMachine)
+      new_user_session GET    /users/sign_in                     {:controller=>"sessions", :action=>"new"}
+          user_session POST   /users/sign_in                     {:controller=>"sessions", :action=>"create"}
+  destroy_user_session GET    /users/sign_out                    {:controller=>"sessions", :action=>"destroy"}
+     new_user_password GET    /users/password/new(.:format)      {:controller=>"passwords", :action=>"new"}
+    edit_user_password GET    /users/password/edit(.:format)     {:controller=>"passwords", :action=>"edit"}
+         user_password PUT    /users/password(.:format)          {:controller=>"passwords", :action=>"update"}
+                       POST   /users/password(.:format)          {:controller=>"passwords", :action=>"create"}
+ new_user_registration GET    /users/sign_up(.:format)           {:controller=>"registrations", :action=>"new"}
+edit_user_registration GET    /users/edit(.:format)              {:controller=>"registrations", :action=>"edit"}
+     user_registration PUT    /users(.:format)                   {:controller=>"registrations", :action=>"update"}
+                       DELETE /users(.:format)                   {:controller=>"registrations", :action=>"destroy"}
+                       POST   /users(.:format)                   {:controller=>"registrations", :action=>"create"}
+             contracts GET    /contracts(.:format)               {:controller=>"contracts", :action=>"index"}
+                       POST   /contracts(.:format)               {:controller=>"contracts", :action=>"create"}
+          new_contract GET    /contracts/new(.:format)           {:controller=>"contracts", :action=>"new"}
+         edit_contract GET    /contracts/:id/edit(.:format)      {:controller=>"contracts", :action=>"edit"}
+              contract GET    /contracts/:id(.:format)           {:controller=>"contracts", :action=>"show"}
+                       PUT    /contracts/:id(.:format)           {:controller=>"contracts", :action=>"update"}
+                       DELETE /contracts/:id(.:format)           {:controller=>"contracts", :action=>"destroy"}
+             alt_provs GET    /alt_provs(.:format)               {:controller=>"alt_provs", :action=>"index"}
+                       POST   /alt_provs(.:format)               {:controller=>"alt_provs", :action=>"create"}
+          new_alt_prov GET    /alt_provs/new(.:format)           {:controller=>"alt_provs", :action=>"new"}
+         edit_alt_prov GET    /alt_provs/:id/edit(.:format)      {:controller=>"alt_provs", :action=>"edit"}
+              alt_prov GET    /alt_provs/:id(.:format)           {:controller=>"alt_provs", :action=>"show"}
+                       PUT    /alt_provs/:id(.:format)           {:controller=>"alt_provs", :action=>"update"}
+                       DELETE /alt_provs/:id(.:format)           {:controller=>"alt_provs", :action=>"destroy"}
+                  root        /                                  {:controller=>"home", :action=>"index"}
+                              /alt_provs/child                   {:controller=>"alt_provs", :action=>"child"}
+                              /:controller/:action/:id           
+                              /:controller/:action/:id(.:format) 

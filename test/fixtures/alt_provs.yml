@@ -1,0 +1,50 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+alt_prov_1:
+  id: 1
+  legal_language: Mother provision this is not for use
+  simple_description: Please do not change
+  contract_id: nil
+  parent_id: nil
+
+alt_prov_2:
+  id: 2
+  legal_language: We here by will drive your cameros
+  simple_description: Gives us rights to drive their cameros
+  contract_id: nil
+  parent_id: 1
+
+alt_prov_3:
+  id: 3
+  legal_language: Here by all your base are belong to us
+  simple_description: These provision gives all their bases to us
+  contract_id: nil
+  parent_id: 1
+
+alt_prov_4:
+  id: 4
+  legal_language: Here by all your greet bases are belong to us
+  simple_description: These provision gives only their green bases to us
+  contract_id: 1
+  parent_id: 3
+
+alt_prov_5:
+  id: 5
+  legal_language: We here by will drive your cameros on sunny days
+  simple_description: Gives us rights to drive their cameros in nice weather
+  contract_id: 2
+  parent_id: 2
+
+alt_prov_6:
+  id: 6
+  legal_language: We here by will drive your cameros
+  simple_description: Gives us rights to drive their cameros
+  contract_id: 3
+  parent_id: 2
+
+alt_prov_7:
+  id: 7
+  legal_language: new provision
+  simple_description: new provision
+  contract_id: nil
+  parent_id: 1 

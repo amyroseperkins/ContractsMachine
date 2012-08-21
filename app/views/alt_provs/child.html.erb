@@ -1,0 +1,8 @@
+<h1>Add alt_prov</h1>
+<% form_for :alt_prov, @alt_prov, :url => { :action => "create_child" } do |f| %>
+    <%= f.label :parent_id %><br />
+    <%= f.collection_select :parent_id, @template_alt_provs, :id, :simple_description %>
+    <%= submit_tag 'CreateChild' %>
+<% end %>
+
+<%= link_to 'Back', alt_provs_path %>

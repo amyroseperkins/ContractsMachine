@@ -1,0 +1,29 @@
+<% title "Contracts" %>
+
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Editor</th>
+    <th>Title</th>
+  </tr>
+  <% for contract in @contracts %>
+    <tr>
+      <td><%=h contract.author %></td>
+      <td><%=h contract.editor %></td>
+      <td><%=h contract.title %></td>
+	<% if permitted_to? :show, @contract %>
+      <td><%= link_to "Show", contract %></td>
+    <% end %>
+    <% if permitted_to? :edit, @contract %>
+      <td><%= link_to "Edit", edit_contract_path(contract) %></td>
+    <% end %>
+    <% if permitted_to? :destroy, @contract %>
+      <td><%= link_to "Destroy", contract, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+    </tr>
+  <% end %>
+</table>
+
+<% if permitted_to? :create, @contract %>
+<p><%= link_to "New Contract", new_contract_path %></p>
+<% end %>

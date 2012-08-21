@@ -1,0 +1,26 @@
+<h1>Listing alt_provs</h1>
+
+<table>
+  <tr>
+    <th>Legal language</th>
+    <th>Simple description</th>
+    <th>Contract</th>
+    <th>Parent</th>
+  </tr>
+
+<% @alt_provs.each do |alt_prov| %>
+  <tr>
+    <td><%=h alt_prov.legal_language %></td>
+    <td><%=h alt_prov.simple_description %></td>
+    <td><%=h alt_prov.contract_id %></td>
+    <td><%=h alt_prov.parent_id %></td>
+    <td><%= link_to 'Show', alt_prov %></td>
+    <td><%= link_to 'Edit', edit_alt_prov_path(alt_prov) %></td>
+    <td><%= link_to 'Destroy', alt_prov, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to :controller => 'altprovs', :action => 'child' %>
